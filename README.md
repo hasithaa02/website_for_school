@@ -313,6 +313,19 @@ For technical support or questions about this implementation:
 - Check the testing results for known issues
 - Refer to the original websites for content accuracy
 
+## 🔧 Backend
+
+This project uses a **serverless backend** approach for handling form submissions and sending emails. We integrated [FormSubmit](https://formsubmit.co/) — a third-party form backend service — to automatically forward admission and contact form data to a specified email address without requiring custom server-side scripting.
+
+### How it works:
+- Form data is submitted via an HTML POST request.
+- Hidden input fields are used to configure auto-response, disable captcha, and customize the subject line.
+- Emails are sent directly to the school’s official email (`ahpsbachpan9@gmail.com`) upon form submission.
+- A thank-you popup is shown using JavaScript, and the form resets without redirecting the user.
+
+This approach eliminates the need to maintain a separate backend server while ensuring a secure and efficient way to receive inquiries and admission requests.
+
+
 ---
 
 **Note**: This is a recreation and combination of existing school websites. All content should be verified and updated with current information before production use.
