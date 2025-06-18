@@ -327,6 +327,3 @@ This approach eliminates the need to maintain a separate backend server while en
 
 
 ---
-
-**Note**: This is a recreation and combination of existing school websites. All content should be verified and updated with current information before production use.
-
